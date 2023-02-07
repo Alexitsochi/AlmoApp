@@ -20,3 +20,7 @@ def ping_almo():
             resp = "Алмо доступна"
 
     return resp
+
+
+if __name__ == "__main__":
+    ping_almo()
