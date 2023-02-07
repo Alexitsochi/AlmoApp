@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+"""
+Автор Александр Говорухин, @alexitsochi
+Этот скрипт создает визуальный интерфейс и содержит главную функцию
+"""
+
 import tkinter
 from tkinter import *
 from PIL import Image, ImageTk
@@ -93,4 +99,8 @@ btn = Button(text="Запустить", bg="red", fg="black", command=click).pla
 text = Text(width=62, height=15)
 text.place(x=10, y=130)
 
-window.mainloop()
+
+if __name__ == "__main__":
+    change_img()
+    click()
+    window.mainloop()
