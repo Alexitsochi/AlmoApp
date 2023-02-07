@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+"""
+Автор Александр Говорухин, @alexitsochi
+
+Этот скрипт берет данные и проверяет доступность сервера Almo сервера
+"""
+
 import json
 import requests
 from requests.exceptions import HTTPError
