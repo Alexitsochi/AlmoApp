@@ -1,6 +1,6 @@
 {
     "almo": "http://172.16.160.53:8020",
-	"kp_Host": "ftp.kp.karousel.ru",
+    "kp_Host": "ftp.kp.karousel.ru",
     "kp_Port": 2121,
     "rh_Host": "85.172.71.4",
     "rh_Port": 7021,
