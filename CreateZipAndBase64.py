@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+"""
+Автор Александр Говорухин, @alexitsochi
+Этот скрипт создает архив и шифрует его в строку base64
+"""
+
 import base64
 import zipfile
 
@@ -25,3 +31,6 @@ def create_zip():
     response = "Zip файлы сформированы"
 
     return response
+
+if __name__ == "__main__":
+    create_zip()
