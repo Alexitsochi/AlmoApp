@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+"""
+Автор Александр Говорухин, @alexitsochi
+
+Этот скрипт создает две картинки из предоставленных данных
+"""
+
 import json
 from PIL import Image, ImageFont, ImageDraw
 
@@ -99,3 +106,8 @@ def create_img():
 
     return "Изображения сформированы"
 
+
+if __name__ == "__main__":
+    set_color_text(text_value="0")
+    set_width_text(text_value, width)
+    create_img()
