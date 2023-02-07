@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+"""
+Автор Александр Говорухин, @alexitsochi
+Этот скрипт создает xml-файл и отсылает его на сервер
+"""
+
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from CreateZipAndBase64 import *
@@ -90,3 +96,9 @@ def send_xml():
             response = "Информация не отправлена"
 
     return response
+
+
+if __name__ == "__main__":
+    create_xml(elem_tpi)
+    save_xml()
+    send_xml()
