@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+"""
+Автор Александр Говорухин, @alexitsochi
+Этот скрипт собирает данные с курортов
+"""
+
 import ftplib
 import requests
 import json
@@ -158,3 +164,13 @@ def get_data_gasprom():
 def write_data():
     with open("Data.json", "w") as data_json:
         json.dump(data, data_json)
+
+
+if __name__ == "__main__":
+    get_data_polyana()
+    set_data(dates, name_data)
+    get_data_rosa_hutor_up()
+    get_data_rosa_hutor_down()
+    get_data_rosa_hutor_ski()
+    get_data_gasprom()
+    write_data()
